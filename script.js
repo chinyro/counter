@@ -18,13 +18,16 @@ buttons.addEventListener('click', (e) => {
   }
 });
 
-// Changing color
+//Changing color
 function changeColor() {
   if (count.innerHTML > 0) {
     count.style.color = '#79E0EE';
+    count.style.backgroundColor = '#FFF';
   } else if (count.innerHTML < 0) {
     count.style.color = '#F11A7B';
+    count.style.backgroundColor = '#FFF';
   } else {
-    count.style.color = '#EEEDED';
+    count.style.color = '#fff';
+    count.style.backgroundColor = '#818FB4';
   }
 }

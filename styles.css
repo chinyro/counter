@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
-:root {
-  --white: #fff;
-  --black: #1c2b2d;
-  --blue: #31326f;
-  --light-blue: #005490;
-  --color-primary: #9d0191;
-  --color-sec: #db6400;
-  --grey: #eee;
-  --dark-grey: #222831;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
   margin: 0;
@@ -22,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -52,20 +41,30 @@ img {
 .counter {
   width: 40rem;
   padding: 1rem;
-  background-color: #494a93;
+  background-color: #435585;
   color: aliceblue;
   text-align: center;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .counter > * {
   margin-bottom: 2rem;
 }
 
+h1 {
+  font-size: 2.5rem;
+  padding-bottom: 18px;
+}
+
 .count {
   font-size: 4rem;
   margin: 50px;
+  border: 3px dashed #acc1cf;
+  padding: 10px;
+  background-color: #818FB4;
+  color: #ffffff;
 }
 
 .buttons button {
@@ -76,40 +75,68 @@ img {
   border: none;
   color: #fff;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   cursor: pointer;
 }
 
 button.substract {
+  background-color: #fcfcfc;
+  color: #c23373;
+  transition: all 150ms ease;
+}
+
+button.substract:hover {
   background-color: #c23373;
+  color: #fcfcfc;
 }
 
 button.reset {
-  background-color: #445069;
+  background-color: #fcfcfc;
+  color: #A2678A;
+  transition: all 150ms ease;
+  
+}
+
+button.reset:hover {
+  background-color: #A2678A;
+  color: #fcfcfc;
 }
 
 button.add {
-  background-color: #33bbc5;
+  background-color: #fcfcfc;
+  color: #33bbc5;
+  transition: all 150ms ease;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button.add:hover {
+  background-color: #33bbc5;
+  color: #fcfcfc;
 }
-footer p {
-  font-size: 1.2rem;
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  margin-top: 300px;
+}
+.footer p {
+  font-size: 1.5rem;
   text-align: center;
+  font-weight: 500;
+  color: #838486;
+  letter-spacing: 1px;
 }
-footer p i {
+.footer p i {
   color: rgb(145, 33, 198);
 }
 
-
-footer p span a {
-  text-decoration: none;
+.footer p span {
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
-a {
+.a {
   color: #8a4fbe;
 }
