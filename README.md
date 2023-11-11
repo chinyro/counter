@@ -1,3 +1,3 @@
-# counter
+# number-generator
 
-![](counter.gif)# number-generator
+![](random-number.gif)
