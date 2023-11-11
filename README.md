@@ -1,3 +1,3 @@
 # counter
 
-![](counter.gif)
+![](/images/counter.gif)
