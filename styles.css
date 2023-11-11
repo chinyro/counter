@@ -71,7 +71,6 @@ h1 {
 
 .buttons button {
   padding: 1rem;
-  width: 80%;
   margin: 0 1rem;
   margin-top: 30px;
   border-radius: 5px;
@@ -80,6 +79,18 @@ h1 {
   font-weight: 600;
   letter-spacing: 1.5px;
   cursor: pointer;
+}
+
+button.subs {
+  background-color: #fcfcfc;
+  color: #DA0C81;
+  transition: all 150ms ease;
+  
+}
+
+button.subs:hover {
+  background-color: #DA0C81;
+  color: #fcfcfc;
 }
 
 button.reset {
@@ -91,6 +102,18 @@ button.reset {
 
 button.reset:hover {
   background-color: #A2678A;
+  color: #fcfcfc;
+}
+
+button.add {
+  background-color: #fcfcfc;
+  color: #64CCC5;
+  transition: all 150ms ease;
+  
+}
+
+button.add:hover {
+  background-color: #64CCC5;
   color: #fcfcfc;
 }
 
